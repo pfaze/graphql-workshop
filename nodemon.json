@@ -1,0 +1,8 @@
+{
+  "verbose": true,
+  "args": ["--inspect"],
+  "env": {
+    "NODE_ENV": "development",
+    "MOCK": "true"
+  }
+}

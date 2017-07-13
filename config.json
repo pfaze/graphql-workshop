@@ -1,0 +1,7 @@
+{
+  "pokemon": {
+    "api": {
+      "endpoint": "http://pokeapi.co/api/v2/"
+    }
+  }
+}

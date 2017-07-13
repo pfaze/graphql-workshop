@@ -1,0 +1,50 @@
+{
+  "name": "graphql-workshop",
+  "version": "1.0.0",
+  "description": "GraphQL Introduction Project",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "NODE_ENV=MOCK ./node_modules/mocha/bin/mocha test/**/*tests.js --reporter dot",
+    "test-and-record": "RECORD=true ./node_modules/mocha/bin/mocha test/**/*tests.js --reporter dot",
+    "lint": "node_modules/.bin/eslint lib/** -c .eslintrc",
+    "development": "nodemon",
+    "coverage": "NODE_ENV=development MOCK=true node_modules/.bin/nyc --check-coverage --lines 50 --reporter=html --reporter=text ./node_modules/mocha/bin/mocha test/**/*tests.js --reporter dot",
+    "start": "node ./lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfaze/graphql-workshop.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "Apollo",
+    "NodeJS"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pfaze/graphql-workshop/issues"
+  },
+  "homepage": "https://github.com/pfaze/graphql-workshop#readme",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "express": "^4.15.3",
+    "moment": "^2.18.1",
+    "node-uuid": "^1.4.8",
+    "nodemon": "^1.11.0",
+    "on-finished": "^2.3.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "validator": "^8.0.0",
+    "winston": "^2.3.1",
+    "nock": "^9.0.13"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "eslint-config-google": "^0.9.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3",
+    "supertest": "^3.0.0"
+  }
+}

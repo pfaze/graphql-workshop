@@ -167,7 +167,12 @@ Mock your entire GraphQL API as described [here](http://dev.apollodata.com/tools
 npm script **start-mock** that starts up with a new environment variable MOCK_GRAPHQL. If this variable is set to true the GraphQL API
 should be using mocked values. As a bonus write your own mock generators to generate real pokemon names.
 
-### #10 ...
+### #10 Add a mutation
 
-**TODO** _Add more steps (manipulations/subscriptions/dataloader/etc)_
+Add a way to retrieve favorite pokemon (sorted by number of votes) and a way to vote for your 
+favorite pokemon. Read more about mutations [here](http://graphql.org/learn/queries/).
+
+### TODO
+
+**TODO** _Add more steps (subscriptions/dataloader/etc)_
 

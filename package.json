@@ -9,6 +9,7 @@
     "lint": "node_modules/.bin/eslint lib/** -c .eslintrc",
     "development": "nodemon",
     "coverage": "NODE_ENV=development MOCK=true node_modules/.bin/nyc --check-coverage --lines 50 --reporter=html --reporter=text ./node_modules/mocha/bin/mocha test/**/*tests.js --reporter dot",
+    "start-mock": "MOCK_GRAPHQL=true node ./lib/index.js",
     "start": "node ./lib/index.js"
   },
   "repository": {

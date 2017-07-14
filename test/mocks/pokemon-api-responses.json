@@ -7,28 +7,10 @@
     "status": 301,
     "response": "",
     "rawHeaders": [
-      "Date",
-      "Thu, 13 Jul 2017 13:47:14 GMT",
-      "Set-Cookie",
-      "__cfduid=dab63613dce5b1f7ba4010422b9ea393b1499953634; expires=Fri, 13-Jul-18 13:47:14 GMT; path=/; domain=.pokeapi.co; HttpOnly",
-      "X-Frame-Options",
-      "SAMEORIGIN",
       "Location",
       "http://pokeapi.co/api/v2/pokemon/?offset=0",
-      "X-XSS-Protection",
-      "1; mode=block",
-      "Server",
-      "cloudflare-nginx",
-      "CF-RAY",
-      "37dcb167438a2bd0-AMS",
-      "Transfer-Encoding",
-      "chunked",
       "Content-Type",
-      "text/html; charset=utf-8",
-      "Via",
-      "1.1 wsa2.klm.com:80 (Cisco-WSA/9.1.2-022)",
-      "Connection",
-      "close"
+      "text/html; charset=utf-8"
     ]
   },
   {
@@ -125,32 +107,8 @@
       "next": "http://pokeapi.co/api/v2/pokemon/?offset=20"
     },
     "rawHeaders": [
-      "Date",
-      "Thu, 13 Jul 2017 13:47:15 GMT",
-      "Set-Cookie",
-      "__cfduid=d4fc11a10868fcf1165a574462ddd16111499953634; expires=Fri, 13-Jul-18 13:47:14 GMT; path=/; domain=.pokeapi.co; HttpOnly",
-      "Vary",
-      "Accept-Encoding",
-      "Vary",
-      "Cookie",
-      "X-Frame-Options",
-      "SAMEORIGIN",
-      "Allow",
-      "GET, HEAD, OPTIONS",
-      "X-XSS-Protection",
-      "1; mode=block",
-      "Server",
-      "cloudflare-nginx",
-      "CF-RAY",
-      "37dcb169548c2bd0-AMS",
-      "Transfer-Encoding",
-      "chunked",
       "Content-Type",
-      "application/json",
-      "Via",
-      "1.1 wsa2.klm.com:80 (Cisco-WSA/9.1.2-022)",
-      "Connection",
-      "close"
+      "application/json"
     ]
   },
   {
@@ -247,18 +205,8 @@
       "next": "http://pokeapi.co/api/v2/pokemon/?offset=20"
     },
     "rawHeaders": [
-      "X-Powered-By",
-      "Express",
       "Content-Type",
-      "application/json; charset=utf-8",
-      "Content-Length",
-      "1386",
-      "ETag",
-      "W/\"56a-TTDNHeyUlWmlxGTngYBg0hVNOak\"",
-      "Date",
-      "Thu, 13 Jul 2017 13:48:51 GMT",
-      "Connection",
-      "close"
+      "application/json; charset=utf-8"
     ]
   },
   {
@@ -18451,18 +18399,8 @@
       ]
     },
     "rawHeaders": [
-      "X-Powered-By",
-      "Express",
       "Content-Type",
-      "application/json; charset=utf-8",
-      "Content-Length",
-      "164877",
-      "ETag",
-      "W/\"2840d-pO1udpt9K1pZeyqpTElEgGSypyk\"",
-      "Date",
-      "Thu, 13 Jul 2017 13:48:52 GMT",
-      "Connection",
-      "close"
+      "application/json; charset=utf-8"
     ]
   }
 ]

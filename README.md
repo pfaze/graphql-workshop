@@ -145,7 +145,7 @@ Expand your GraphQL API, this time we want to be able to retrieve details on a p
 ```
 # Example basic query
 query getPokemon {
-  pokemon(id: "1") {
+  pokemon(id: 1) {
     id
     name
     stats {
@@ -171,6 +171,31 @@ should be using mocked values. As a bonus write your own mock generators to gene
 
 Add a way to retrieve favorite pokemon (sorted by number of votes) and a way to vote for your 
 favorite pokemon. Read more about mutations [here](http://graphql.org/learn/queries/).
+
+The schema should be updated to be able to retrieve the favorites count on a specific pokemon as well as 
+add a mutation to update the favorites count:
+
+The following query should retrieve the favCount of pokemon 1.
+
+```
+query listPokemon {
+  pokemon(id: 1){
+    id
+    name
+    favCount
+  }
+}
+```
+
+The following mutation should increment the favCount of pokemon 1 by 1.
+
+```
+mutation incrementCounter {
+  incrementFavorite(id: 1) {
+    id
+  }
+}
+```
 
 ### TODO
 

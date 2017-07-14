@@ -1,6 +1,7 @@
 const nock = require('nock');
 const {logger} = require('../lib/config');
 const {describe, it} = require('mocha');
+const assert = require('assert');
 const fs = require('fs');
 const request = require('supertest');
 const app = require('../lib');
@@ -40,17 +41,21 @@ describe('PokeAPI REST API tests', () => {
             });
         }
     });
-    it('should retrieve the first 20 results', function(done) {
+    it('should retrieve the first 20 results', function (done) {
         this.timeout(25000);
         request(app)
             .get('/api/pokemon')
+            .expect((response) => {
+                assert.equal(response.body.length, 20);
+            })
             .expect(200, done);
-            // .then((response) => {
-            //     response.body.length === 20;
-            // });
     });
-    it('should retrieve the details for bulbasaur [id:1]', function(done) {
+    it('should retrieve the details for bulbasaur [id:1]', function (done) {
         this.timeout(25000);
-        request(app).get('/api/pokemon/1').expect(200, done);
+        request(app).get('/api/pokemon/1')
+            .expect((response) => {
+                assert.equal(response.body.name, 'bulbasaur');
+            })
+            .expect(200, done);
     });
 });
